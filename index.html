@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demand Forecasting Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Demand Forecasting Tool</h1>
+        <div class="input-section">
+            <label for="data">Enter historical data (time,demand) separated by commas:</label>
+            <textarea id="data" rows="10" placeholder="e.g., 1,100\n2,150\n3,200"></textarea>
+        </div>
+        <div class="input-section">
+            <label for="futureX">Enter the future time period to predict demand:</label>
+            <input type="number" id="futureX" placeholder="e.g., 6">
+        </div>
+        <button onclick="predictDemand()">Predict Demand</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
